@@ -82,7 +82,7 @@ function scaPlot_func () {
          .style("text-anchor", "end")
          .text("Temperature (F)");
 
-    d3.csv("data/3_scatterplot.csv", function(d) {
+    d3.csv("data/scatterplot.csv", function(d) {
         d.age = +d.age;
         d.temperature = +d.temperature;
         return d;

@@ -17,7 +17,7 @@ function barChart_func () {
         .attr("class", "tooltip")
         .style("opacity", 0);
 
-    d3.csv("data/1_year_bar_chart.csv", function(error, raw) {
+    d3.csv("data/barChart.csv", function(error, raw) {
         if (error) throw error;
 
         var data_stack = []

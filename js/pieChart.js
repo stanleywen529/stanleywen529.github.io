@@ -36,7 +36,7 @@ function pieChart_func () {
         .outerRadius(radius * 0.9)
         .innerRadius(radius * 0.9);
 
-    d3.csv("data/1_age_pie_chart.csv", function(error, data) {
+    d3.csv("data/pieChart.csv", function(error, data) {
         if (error) throw error;
 
         var piechart = svg.append("g")

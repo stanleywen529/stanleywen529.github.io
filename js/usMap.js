@@ -21,7 +21,7 @@ function usMap_func () {
             .attr("class", "tooltip")
             .style("opacity", 0);
         // Load in my states data!
-        d3.csv("data/2_circular_barplot.csv", function(data) {
+        d3.csv("data/circularBarplot.csv", function(data) {
         var dataArray = [];
         for (var d = 0; d < data.length; d++) {
             dataArray.push(parseFloat(data[d].color))

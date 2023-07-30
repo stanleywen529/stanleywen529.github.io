@@ -15,7 +15,7 @@ function cirChart_func () {
           .append("g")
             .attr("transform", "translate(" + (margin.left + width / 2) + "," + (margin.top + height / 2) + ")");
 
-    d3.csv("data/2_circular_barplot.csv", function(d) {
+    d3.csv("data/circularBarplot.csv", function(d) {
         d.Deaths = +d.Deaths;
         // console.log(d.deaths)
         return d;
